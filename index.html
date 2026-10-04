@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive 3D Three.js technical visualization of the KUKA LBR iiwa 14 R820 7-DOF collaborative robotic arm with independent joint kinematics and motion animation." />
+    <title>KUKA LBR iiwa 14 R820 - 3D Robot Kinematics Visualization</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='6' fill='%23ff5500'/><path d='M7 7h10v10H7z' fill='white'/></svg>" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- 3D WebGL Canvas Viewport -->
+      <div id="canvas-container"></div>
+
+      <!-- UI Overlay Layer -->
+      <div id="ui-container"></div>
+
+      <!-- Loading / Error Overlay -->
+      <div id="loading-overlay" class="loading-overlay">
+        <div class="spinner-wrap">
+          <div class="spinner-ring"></div>
+        </div>
+        <h2 class="loading-title">KUKA LBR iiwa 14 R820</h2>
+        <p id="loading-status-text" class="loading-subtitle">Initializing 3D robotic assembly...</p>
+        <div class="loading-bar-wrap">
+          <div id="loading-bar-fill" class="loading-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

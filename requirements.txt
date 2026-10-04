@@ -1,0 +1,22 @@
+# =============================================================================
+# KUKA LBR iiwa 14 R820 - Python CAD Pipeline Requirements
+# Used for converting STEP CAD model (ROBOT KUKA LBR IIWA 14 R820.stp)
+# to high-performance multi-mesh GLB (public/models/kuka_lbr_iiwa.glb)
+# =============================================================================
+
+# OpenCASCADE Technology (OCCT 8.0) bindings for topological BRep analysis
+cadquery-ocp-novtk>=8.0.1.0.0
+cadquery-ocp-proxy>=8.0.1.0.0
+
+# Rust-powered STEP-to-GLTF high-speed BREP converter & material classifier
+cascadio>=0.1.1
+
+# Scientific computing & spatial KDTree search for material assignment
+numpy>=2.0.0
+scipy>=1.14.0
+
+# 3D mesh processing, scene assembly, PBR material creation, and GLB export
+trimesh>=4.0.0
+
+# Image and texture processing
+pillow>=10.0.0
